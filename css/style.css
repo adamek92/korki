@@ -1,8 +1,11 @@
-*{
-    background-color:rgb(52, 39, 99);
+body{
+    background-color:rgb(39, 99, 62);
     
 }
 
+h1{
+    background-color:black;
+}
 
 .header{
     
@@ -13,43 +16,63 @@
   
     position:absolute;
     left:80px;
+    margin: 0;
+    padding:0;
 }
 
 
 
 
-.side-menu{
+.nav{
     width: 80px;;
     height:1021px;
-    background-color:rgb(182, 70, 89);   
+    background-color:rgb(214, 210, 211);   
    
     position:absolute;
-    top:auto;
+    margin:0;
+    padding:0;
+    
+    
+   
    
 }
 
 
-.logo{
-
-    background-color: yellow;
-    height:82px;
-    
-}
-
-
-.menu-options li{
-
+.nav__options{
+    list-style:none;
+    display:block;
     
 
-    position:relative;
-    top:400px;
-    list-style: none;
+    
     
     
 }
 
+.nav__item{
+    
+}
 
-.grid-container {
+.nav--item1{
+    background-color:rgb(238, 255, 0);
+    }
+
+.nav--item6{
+    background-color:fuchsia;
+    
+
+    
+    
+}
+
+.nav__item a{
+    text-decoration:none;
+    
+    
+}
+
+
+
+.grid__container {
     padding:100px 0px 0px 100px;
 
     display: grid;
@@ -60,20 +83,9 @@
       "c1 c2 c3 c4"
       "c5 c6 c7 c8";
   }
+
+  .grid{
+      background-color: aqua;
+  }
   
-  .c1 { background-color: aqua;}
-  
-  .c2 { background-color: aqua;}
-    
-  .c3 { background-color: aqua; }
-  
-  .c4 { background-color: aqua;}
-  
-  .c5 { background-color: aqua; }
-  
-  .c6 { background-color: aqua; }
-  
-  .c7 { background-color: aqua; }
-  
-  .c8 { background-color: aqua }
   
