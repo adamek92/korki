@@ -5,15 +5,14 @@ body{
 
 h1{
     background-color:black;
+    color:white;
 }
 
 .header{
-    
     display:flex;
     width: 1502px;;
     height:82px;
     background-color:red;
-  
     position:absolute;
     left:80px;
     margin: 0;
@@ -22,70 +21,56 @@ h1{
 
 
 
-
+    
 .nav{
     width: 80px;;
     height:1021px;
     background-color:rgb(214, 210, 211);   
-   
     position:absolute;
     margin:0;
     padding:0;
-    
-    
-   
-   
 }
 
 
 .nav__options{
     list-style:none;
     display:block;
-    
-
-    
-    
-    
-}
-
-.nav__item{
-    
-}
-
-.nav--item1{
-    background-color:rgb(238, 255, 0);
     }
 
-.nav--item6{
-    background-color:fuchsia;
-    
+.nav__item{}
 
-    
-    
-}
+
 
 .nav__item a{
     text-decoration:none;
-    
-    
+    }
+
+.main{    
+    width:1574px;
+    height:1021px;
+    background-color:rgb(132, 139, 115)
 }
 
+.container{
+    width:1550px;
+    height:1000px;
+    background-color:brown;
+    }
 
-
-.grid__container {
-    padding:100px 0px 0px 100px;
-
+.main__grid{
     display: grid;
     grid-template-columns: 320px 320px 320px 320px;
     grid-template-rows: 435px 435px;
     gap: 37px 23px;
+    padding:100px;
     grid-template-areas:
-      "c1 c2 c3 c4"
-      "c5 c6 c7 c8";
-  }
+    "main__grid-item"
+    "main__grid-item";
+}
 
-  .grid{
-      background-color: aqua;
-  }
-  
-  
+.main__grid-item{
+
+    background-color:blue;
+}
+
+
