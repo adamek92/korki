@@ -1,75 +1,118 @@
+*{
+    box-sizing:border-box;
+}
+
 body{
+    
+    display:flex;
     background-color:rgb(39, 99, 62);
+}
+
+.wrapper {
+    width:1582px;
+    height:1021px;
+    max-width: 100%;
+    max-height: 100%;
+    display:flex;
+    flex-direction:row;
+
     
 }
 
-h1{
-    background-color:black;
-    color:white;
+.wrapper__nav{
+    order: 0;
+    flex: 0 0 100px;
+    max-width: 80px;
+    align-self:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-color:sienna;
 }
+
+.wrapper__main{
+    order: 0;
+    flex: 1 0 auto;
+    align-self: auto;
+    background-color:honeydew;
+
+}
+
 
 .header{
+    height: 80px;
     display:flex;
-    width: 1502px;;
-    height:82px;
     background-color:red;
-    position:absolute;
-    left:80px;
-    margin: 0;
-    padding:0;
-}
-
-
-
+    align-items:center;
     
-.nav{
-    width: 80px;;
-    height:1021px;
-    background-color:rgb(214, 210, 211);   
-    position:absolute;
-    margin:0;
-    padding:0;
+    
 }
 
+.header__search{
+    flex: 0 0 70%;
+    border:dotted;
+}
+.header__profile{
+    flex: 0 0 20%;
+    border: dotted;
+}
+
+.header__buttoms{
+    flex: 0 0 10%;
+    border:seagreen;
+    border:dotted;
+}
+
+
+.nav{
+    background-color: grey;
+}
 
 .nav__options{
     list-style:none;
-    display:block;
-    }
-
-.nav__item{}
-
-
-
-.nav__item a{
-    text-decoration:none;
-    }
-
-.main{    
-    width:1574px;
-    height:1021px;
-    background-color:rgb(132, 139, 115)
 }
 
-.container{
-    width:1550px;
-    height:1000px;
+
+
+
+
+.a{
+    text-decoration:none;
+}
+
+.main{
+    display:flex;
+    flex-direction:column;
+    background-color:salmon;
+    margin-left:75px;
+}
+
+.main__menu{
     background-color:brown;
-    }
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+.main__menu--item{}
+
+.main__menu--item a{
+    text-decoration:none;
+}
+
 
 .main__grid{
     display: grid;
     grid-template-columns: 320px 320px 320px 320px;
     grid-template-rows: 435px 435px;
     gap: 37px 23px;
-    padding:100px;
     grid-template-areas:
     "main__grid-item"
     "main__grid-item";
 }
 
 .main__grid-item{
-
     background-color:blue;
 }
 
