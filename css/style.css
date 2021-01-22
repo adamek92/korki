@@ -49,9 +49,17 @@ body{
 }
 
 .header__search{
+
     flex: 0 0 70%;
     border:dotted;
 }
+
+.search__holder{
+    width:95%;
+    height:40%;
+    margin-top:40px;
+}
+
 .header__profile{
     flex: 0 0 20%;
     border: dotted;
@@ -61,6 +69,13 @@ body{
     flex: 0 0 10%;
     border:seagreen;
     border:dotted;
+    
+}
+
+.header__buttoms--item{
+    display:flex;
+    justify-content:space-between;
+    
 }
 
 
@@ -115,5 +130,4 @@ body{
 .main__grid-item{
     background-color:blue;
 }
-
 
